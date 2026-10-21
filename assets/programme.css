@@ -1,0 +1,39 @@
+/* Concert columns and the complete original history image archive. */
+.concert-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:start}
+.concert-column{min-width:0}
+.concert-column>h3{font-size:25px;font-weight:550;line-height:1.3;min-height:65px;margin:0;padding:0 0 23px;border-bottom:2px solid var(--wine)}
+.concert-column .concert-feature{grid-template-columns:1fr;margin-top:25px;border:1px solid var(--line)}
+.home-concert .concert-art{padding:24px;background:#e5ded2}
+.home-concert .poster-link{max-width:245px}
+.home-concert .poster-link img{width:100%;height:auto;object-fit:contain}
+.home-concert .concert-information{padding:28px 30px}
+.home-concert .concert-information h4{font-family:var(--sans);font-size:37px;font-weight:550;letter-spacing:-.025em;line-height:1.15;color:var(--wine);margin:0 0 17px}
+.home-concert .concert-kicker{margin-bottom:20px;gap:15px;flex-wrap:wrap}
+.home-concert .concert-admission{font-size:12px}
+.home-concert .event-facts>div{font-size:14px;align-items:flex-start}
+.home-concert .event-facts dt{padding-top:3px}
+.concert-column .concert-bottom{padding-top:20px}
+.benefit-intro{font-size:15px;line-height:1.8;color:var(--muted);margin:21px 0}
+.benefit-list{display:grid;gap:24px}
+.benefit-event{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);border:1px solid var(--line);border-radius:4px;background:var(--paper);overflow:hidden;min-width:0}
+.benefit-poster{display:flex;align-items:center;justify-content:center;background:#e5ded2;padding:17px;min-width:0}
+.benefit-poster img{display:block;width:100%;height:290px;object-fit:contain;transform:none}
+.benefit-copy{padding:25px 22px;align-self:center;min-width:0}
+.benefit-copy h4{font-family:var(--sans);font-size:26px;line-height:1.2;font-weight:550;letter-spacing:-.025em;color:var(--wine);margin:0 0 17px;overflow-wrap:break-word}
+.benefit-date{font-size:14px;font-weight:550;line-height:1.8;margin-bottom:13px}
+.benefit-description{font-size:13px;line-height:1.8;color:var(--muted)}
+.benefit-copy .text-link{font-size:12px;margin-top:20px;line-height:1.5;gap:9px}
+.history-album-heading{display:flex;align-items:baseline;justify-content:space-between;gap:22px;margin-bottom:28px}
+.history-album-heading h2{font-size:31px;font-weight:550;line-height:1.25}
+.history-album-heading>span{font-size:13px;color:var(--muted);white-space:nowrap}
+.history-image-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 24px;align-items:start}
+.history-image{margin:0;min-width:0}
+.history-image>a{display:flex;align-items:center;justify-content:center;height:245px;background:var(--paper);border:1px solid var(--line);padding:12px;border-radius:4px;transition:border-color .2s}
+.history-image>a:hover{border-color:var(--wine)}
+.history-image img{display:block;width:100%;height:100%;object-fit:contain;transform:none;border-radius:0}
+.history-image figcaption{font-size:14px;line-height:1.65;color:var(--muted);margin-top:13px}
+.history-album-posters .history-image>a{height:350px;padding:17px}
+@media(max-width:1100px){.concert-columns{gap:26px}.concert-column>h3{font-size:23px}.benefit-event{grid-template-columns:1fr}.benefit-poster{padding:22px}.benefit-poster img{height:250px}.benefit-copy{padding:23px}.benefit-copy h4{font-size:25px}.benefit-date{margin-bottom:9px}.benefit-copy .text-link{margin-top:15px}.history-image>a{height:210px}}
+@media(max-width:960px){.history-image-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.history-image>a{height:255px}.concert-column>h3{min-height:85px}.home-concert .concert-information{padding:25px}.home-concert .concert-information h4{font-size:33px}}
+@media(max-width:760px){.concert-columns{grid-template-columns:1fr;gap:42px}.concert-column>h3{font-size:24px;min-height:0;padding-bottom:20px}.concert-column .concert-feature{margin-top:22px}.home-concert .poster-link{max-width:240px}.home-concert .concert-information{padding:26px 24px}.home-concert .concert-information h4{font-size:33px}.home-concert .event-facts>div{font-size:13px}.benefit-list{gap:25px}.benefit-poster img{height:325px}.benefit-copy{padding:25px}.benefit-copy h4{font-size:27px}.benefit-date{font-size:14px}.benefit-description{font-size:14px}.benefit-copy .text-link{font-size:13px}.history-album-heading{align-items:start;gap:15px;margin-bottom:24px}.history-album-heading h2{font-size:27px}.history-album-heading>span{font-size:12px;padding-top:7px}.history-image-grid{grid-template-columns:1fr;gap:27px}.history-image>a{height:auto;padding:10px}.history-image img{height:auto;max-height:430px;object-fit:contain}.history-album-posters .history-image>a{height:auto;padding:15px}.history-album-posters .history-image img{max-height:450px}.history-image figcaption{font-size:13px;margin-top:11px}}
+@media(max-width:370px){.home-concert .concert-information{padding-inline:19px}.home-concert .event-facts>div{font-size:12px}.benefit-copy{padding:22px 20px}.benefit-copy h4{font-size:25px}.benefit-poster{padding:18px}.benefit-poster img{height:290px}.history-album-heading h2{font-size:25px}}
